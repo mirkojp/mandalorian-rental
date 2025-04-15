@@ -3,7 +3,7 @@
 ## Requisitos
 
 - [Docker](https://www.docker.com/)
-- [Docker Compose](https://docs.docker.com/compose/)
+
 
 ## Cómo correr el proyecto
 
