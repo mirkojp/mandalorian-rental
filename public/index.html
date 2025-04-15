@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mandalorian - Alquiler de Capítulos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: url('/images/background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #e5e7eb;
+        }
+
+        .episode-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .episode-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .status-disponible {
+            color: #10b981;
+        }
+
+        .status-reservado {
+            color: #f59e0b;
+        }
+
+        .status-alquilado {
+            color: #ef4444;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col">
+    <header class="bg-gray-900 py-6 text-center">
+        <h1 class="text-4xl font-bold text-yellow-400">The Mandalorian - Alquila tus Capítulos</h1>
+        <p class="text-gray-300 mt-2">Explora y alquila los capítulos de la serie</p>
+    </header>
+    <main class="container mx-auto p-6 flex-grow">
+        <div id="episodes-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Episode cards will be injected here -->
+        </div>
+    </main>
+    <footer class="bg-gray-900 py-4 text-center text-gray-400">
+        <p>© 2025 The Mandalorian Rental. Todos los derechos reservados.</p>
+    </footer>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
